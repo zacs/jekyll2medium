@@ -5,7 +5,7 @@ Medium currently [only accepts Wordpress XML](https://help.medium.com/hc/en-us/a
 
 ### Installation
 
-Just put this file in your root jekyll directory (the same directory where you have your `index.html`). 
+Just put this file in your root jekyll directory (the same directory where you have your `index.html`). Of course, replace all the foobar items in the Front Matter with your own details. NOTE: Make sure your site_root does _not_ have a trailing slash. 
 
 ### Usage
 
