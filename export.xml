@@ -34,13 +34,13 @@ author_name: Foo Bar
     xmlns:wp="http://wordpress.org/export/1.2/">
     <channel>
         <title>{{ page.site_title }}</title>
-        <link>http://wpthemetestdata.wordpress.com</link>
+        <link>{{ page.site_root }}/</link>
         <description>{{ page.site_description }}</description>
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         <language>en</language>
         <wp:wxr_version>1.2</wp:wxr_version>
-        <wp:base_site_url>http://wordpress.com/</wp:base_site_url>
-        <wp:base_blog_url>http://wpthemetestdata.wordpress.com</wp:base_blog_url>
+        <wp:base_site_url>{{ page.site_root }}/</wp:base_site_url>
+        <wp:base_blog_url>{{ page.site_root }}/</wp:base_blog_url>
         <wp:wp_author>
             <wp:author_login>{{ page.author_name | slugify }}</wp:author_login>
             <wp:author_email>{{ page.author_email }}</wp:author_email>
@@ -56,7 +56,7 @@ author_name: Foo Bar
             <guid isPermaLink="false">{{ page.site_root }}{{ post.url }}</guid>
             <description/>
             <content:encoded>
-                <![CDATA[{{ post.content | xml_escape }}]]>
+                <![CDATA[{{ post.content }}]]>
             </content:encoded>
             <excerpt:encoded>
                 <![CDATA[]]>
