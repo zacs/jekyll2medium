@@ -5,10 +5,11 @@ Medium currently [only accepts Wordpress XML](https://help.medium.com/hc/en-us/a
 
 ## Installation
 
-Just put this file in your root jekyll directory (the same directory where you have your `index.html`). Of course, replace all the foobar items in the Front Matter with your own details. 
+Just put the `export.xml` file in your root jekyll directory (the same directory where you have your `index.html`). 
 
 ### Installation Requirements
 
+- Replace the front matter in `export.xml` with your own details, instead of the Foo Bar stuff
 - Make sure your site_root does _not_ have a trailing slash. 
 - To ensure images in your posts make the transition, ensure all `src` tags have absolute URLs (eg. `http://foo.bar/img/img1.jpg` instead of `/img/img1.jpg`)
 
