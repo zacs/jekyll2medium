@@ -12,6 +12,7 @@ Just put the `export.xml` file in your root jekyll directory (the same directory
 - Replace the front matter in `export.xml` with your own details, instead of the Foo Bar stuff
 - Make sure your site_root does _not_ have a trailing slash. 
 - To ensure images in your posts make the transition, ensure all `src` tags have absolute URLs (eg. `http://foo.bar/img/img1.jpg` instead of `/img/img1.jpg`)
+  - Alternatively, if you don't want to change anything in your `_posts` dir, you could modify the `{{ post.content }}` in the `export.xml` to be something like `{{ post.content | replace: '/img/', 'http://foo.bar/img/' }}`.
 
 ## Usage
 
