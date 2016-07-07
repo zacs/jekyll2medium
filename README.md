@@ -16,4 +16,4 @@ Just put the `export.xml` file in your root jekyll directory (the same directory
 
 ## Usage
 
-After the file is present, re-build your Jekyll site (`jekyll build`), and you will then have an export.xml file in your site's root. Use this file to [import into Medium](https://help.medium.com/hc/en-us/articles/218445047). 
+After the file is present, re-build your Jekyll site (`jekyll build`), and you will then have an export.xml file in your site's root (the '_site' folder). Use this file to [import into Medium](https://help.medium.com/hc/en-us/articles/218445047). 
